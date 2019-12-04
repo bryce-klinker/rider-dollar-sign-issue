@@ -5,9 +5,15 @@ namespace Rider.Issue.Sample.Test
     public class DollarSignTest
     {
         [Fact]
+        public void ShouldReturnAmountInCurrencyFormat()
+        {
+            Assert.Equal("$3.98", Dollars.Format(3.98));
+        }
+
+        [Fact]
         public void ShouldReturnDollarSign()
         {
-            Assert.Equal("$3.98", Dollars.Get(3.98));
+            Assert.Equal("$", Dollars.Sign());
         }
     }
 }

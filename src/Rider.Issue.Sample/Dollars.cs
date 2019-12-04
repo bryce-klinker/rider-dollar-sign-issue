@@ -2,9 +2,14 @@
 {
     public class Dollars
     {
-        public static string Get(double amount)
+        public static string Format(double amount)
         {
             return amount.ToString("C");
+        }
+
+        public static string Sign()
+        {
+            return "$";
         }
     }
 }
