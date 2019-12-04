@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Rider.Issue.Sample
+﻿namespace Rider.Issue.Sample
 {
     public class Dollars
     {
